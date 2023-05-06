@@ -35,7 +35,7 @@ module "db" {
   subnet_ids             = ["subnet-0107c7a2008e5c86c", "subnet-083eff7405740f87c", "subnet-097b7240437bd0849"]
 
   # DB parameter group
-  family = local.workspace["rds"]["family"]
+  family = local.workspace.rds.family
   # DB option group
   major_engine_version = "5.7"
 

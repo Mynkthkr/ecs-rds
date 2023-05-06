@@ -1,8 +1,10 @@
 
-workspaces:
+workspace:
   aws-infra-us-east-1-qa:
-
-
+    aws:
+      region: "us-east-1"
+      account_id: 
+    environment_name: "qa"
     rds:
       family: "mysql5.7"
       engine: "db.t3.medium"
